@@ -1,4 +1,4 @@
-import asynico
+import asyncio
 from mcp import ClientSession
 from contextlib import AsyncExitStack
 
@@ -38,4 +38,4 @@ async def main():
     await client.cleanup()
 
 if __name__ == "__main__":
-    asynico(main())
+    asyncio.run(main())
